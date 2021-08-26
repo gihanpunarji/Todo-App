@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <!-- javaScript -->
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+
+  <title>Frontend Mentor | Todo app</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background-image">
+    <img src="images/bg-desktop-dark.jpg" alt="">
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        TODO
+      </div>
+      <div class="theme">
+        <img src="images/icon-sun.svg" alt="">
+      </div>
+    </div>
+
+    <div class="new-todo">
+      <div class="check-todo">
+        <div class="check-marker">
+        </div>
+      </div>
+      <div class="new-todo-input">
+        <form onsubmit="addItems(event)">
+          <input id="todo-input" type="text" placeholder="Create a new todo..">
+        </form>
+      </div>
+    </div>
+    <div class="todo-items-wrapper">
+      <div class="todo-items">
+        <div class="todo-item">
+          <div class="check-todo">
+            <div class="check-marker">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check-todo">
+            <div class="check-marker">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check-todo">
+            <div class="check-marker">
+              <img src="images/icon-check.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-text">
+            Cut the lawn
+          </div>
+        </div>
+      </div>
+      <div class="todo-items-info">
+        <div class="items-left">
+          5 Items left
+        </div>
+        <div class="items-status">
+          <span class="active">All</span>
+          <span>Active</span>
+          <span>Completed</span>
+        </div>
+        <div class="items-clear">
+          <span>Clear Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
